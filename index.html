@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchithra-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="name">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certification">Certifications</a></li>
+                <li><a href="#publication">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="bi bi-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="bi bi-list" onclick="openmenu()"></i>   
+        </nav>
+        <div class="header-text">
+
+            <h2>"Hi, I am <span>Suchithra</span> <br>I invite you to explore<br> my work, where creativity <br>and precision come together"</h2>
+        </div>
+    </div>
+</div>
+<!--------about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Profile.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a DevOps Engineer with a Master’s in Computer Science from New Jersey Institute of Technology, I specialize in optimizing deployment processes and infrastructure management. At Tally Solutions, I streamlined deployment for 20+ applications, improved performance by 30%, and reduced response times by 50% through automated monitoring. My technical skills include Python, SQL, AWS, and Kubernetes, and I am an AWS Certified DevOps Engineer - Professional. My research at PES University on blockchain technology for e-voting resulted in a published paper and innovative, tamper-resistant voting frameworks. I am passionate about leveraging my expertise in DevOps, big data, and machine learning to drive efficiency and solve complex problems. Let’s connect to explore how I can contribute to enhancing your team’s performance and achieving your technical goals.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Technical Skills :</span> Python, C, HTML, CSS, SQL, MongoDB, PostgreSQL, Linux, AWS.</li>   
+                        <li><span>Software Development Tools :</span>Git, SVN, VS Code, Eclipse, Selenium Docker, Kubernetes, Jenkins.</li>
+                        <li><span>Computer Science Concepts :</span> Data Structures, OOPS,
+                            AI & ML, Distributed Systems.</li>   
+                        <li><span>Operating Systems :</span>  AWS, Azure, Docker, Kubernetes, Linux.</li>   
+                        <li><span>Soft Skills :</span>Communication, Problem-solving, Teamwork and Collaboration, Adaptability.</li>   
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>New Jersey Institute of Technology (2023 - 2024) <br></span>  Master's in Computer Science.</li>
+                        <li><span>PES Unversity (2019 - 2023) <br></span>  Bachelor's in Computer Science and Engineering with specialization in Networks and Cybersecurity.</li>   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!---------Experience-------->
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="experiences-list">
+            <div>
+                <h1>Tally Solutions</h1>
+                <h2>DevOps Engineer</h2>
+                <p>Streamlined deployment for 20+ applications, cutting time by 40% with Jenkins and Docker. Improved performance by 30% with Kubernetes and reduced incident response times by 50% through automated monitoring systems.</p>
+            </div>
+            <div>
+                <h1>PES University</h1>
+                <h2>Junior Researcher</h2>
+                <p>Conducted blockchain research for secure e-voting, cutting tampering and costs. Designed a scalable framework with Hyperledger Fabric, eliminating physical polling stations. Published in GIJET, showing improved voting efficiency and electoral integrity.</p>
+            </div>
+            <div>
+                <h1>PES University</h1>
+                <h2>Teaching Assistant</h2>
+                <p>Assisted in developing and delivering coursework on network security, including firewalls, IDS, and encryption. Facilitated lab sessions on vulnerability assessment and secure network design, and provided guidance using tools like Wireshark and Metasploit.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------Certification-->
+<div id="certification">
+    <div class="container">
+        <div class="row">
+            <div class="certification-col-1">
+                <img src="images/certificate.png">
+            </div>
+            <div class="certification-col-2">
+                <h1 class="sub-title">Certifications</h1>
+                <h2>AWS Certified DevOps Engineer - Professional<br><span> Validation Number : 2a726ec0911e4bb2ba44a2817f9486e1</span></h2>
+                <p>As an AWS Certified DevOps Engineer - Professional, I specialize in optimizing and managing complex deployment pipelines using AWS services. This certification demonstrates my ability to design, deploy, and operate scalable, fault-tolerant systems on AWS. I excel in implementing CI/CD practices with AWS tools like CodePipeline, CodeBuild, and CodeDeploy, and manage infrastructure using AWS CloudFormation and Terraform. My expertise extends to monitoring and logging with AWS CloudWatch and CloudTrail, ensuring system health and security. I also focus on optimizing cloud resources for cost efficiency and implementing robust security practices. This certification highlights my commitment to leveraging AWS technologies to enhance system performance and streamline operations, making me a valuable asset to any DevOps team.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!----------Publication-->
+<div id="publication">
+    <div class="container">
+        <div class="row">
+            <div class="publication-col-1">
+                <h1 class="sub-title">Publications</h1>
+                <h2>E-Voting using Blockchain<br><span> Hinweis Rresearch</span></h2>
+                <p>The paper, "E-Voting using Blockchain," presented at the 14th International Conference on Advances in Computing, Control, and Telecommunication Technologies (ACT 2023), explores the application of blockchain technology to enhance the security and efficiency of electronic voting systems. Authored by Aradhya Janagani, B., Suchithra Udeda, and Mohan, H., it details a blockchain-based framework designed to address common vulnerabilities in traditional voting methods, such as vote tampering and high event costs. The proposed system leverages Hyperledger Fabric to create a decentralized voting environment, eliminating the need for physical polling stations and significantly improving scalability. The paper demonstrates a reduction in tampering incidents and cost, with the framework offering a more transparent, secure, and cost-effective alternative for electoral processes.</p>
+                <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://www.scopus.com/record/display.uri?eid=2-s2.0-85174268457&origin=AuthorNamesList&txGid=0989512f01dc892e7d0b68dbb6904fc2&isValidNewDocSearchRedirection=false">Access Link</a>
+            </div>
+            <div class="publication-col-2">
+                <img src="images/publication.png">
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+<!----My Work-->
+<div id="mywork">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/e-vote.png">
+                <div class="layer">
+                    <h3>E-voting system using blockchain and hyper ledger fabric.</h3>
+                    <a href="https://github.com/Vamshi2801/Location-Aided-Secure-Routing-System-in-Ad-hoc-Networks"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/flight.png">
+                <div class="layer">
+                    <h3>Unlocking Insights in Aviation with Big Data Flight Data Analysis.</h3>
+                    <a href="https://github.com/suchithra41/Unlocking-Insights-in-Aviation-with-Big-Data-Flight-Data-Analysis."><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/cnn.png">
+                <div class="layer">
+                    <h3>Painting vs Photography Classification.</h3>
+                    <a href="https://github.com/suchithra41/Painting-vs-Photography-Classification"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---contact-->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title-2">Contact</h1>
+        <div class="contact-row">
+            <div class="contact-col-1">
+                <a href="https://www.linkedin.com/in/suchithra-udeda-/"><i class="bi bi-linkedin"></i></a>
+                <h3>Linkedin</h3>
+                <p>suchithra-udeda</p>
+                
+            </div>
+    
+            <div class="contact-col-3">
+                <a href="mailto:suchiudeda@gmail.com"><i class="bi bi-envelope-fill"></i></a> 
+                <h3>Email Address</h3>
+                <p>suchiudeda@gmail.com</p>
+                
+            </div>
+            <div class="contact-col-4">
+                <a href="images/suchi_cv.pdf" download><i class="bi bi-cloud-download-fill"></i></a>
+                <h3>Download Resume</h3>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="copyright">
+    <p>Copyright @ Suchithra Udeda .</p>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
